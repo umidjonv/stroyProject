@@ -1,0 +1,145 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+        <link rel="stylesheet" href="./css/custom.css" />
+        <link rel="stylesheet" href="./font/css/open-iconic-bootstrap.css" />
+        <script type="application/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script type="application/javascript" src="./js/bootstrap.js"></script>
+        
+        
+        <link rel="stylesheet" type="text/css" href="./css/easyui.css">
+        <link rel="stylesheet" type="text/css" href="./css/easyui/icon.css">
+
+        <script type="text/javascript" src="./js/jquery.easyui.min.js"></script>
+        <script type="application/javascript" src="./js/custom.js"></script>
+        
+    </head>
+    <body>
+                
+            
+        <div class="row main">
+        <div class="col-3">
+            <h3 class="alert">Stroy Sale</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="#" class="nav-link active">Поставщики</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Приход товаров</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Баланс</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Provider4</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link ">User1 <span class="oi oi-account-logout"></span></a></li>
+                </ul>
+            
+            <h3>Приход</h3>
+            <div class="row">
+                <div class="col">
+                    <form class="mainForm">
+                        <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">ID</label>
+                        <div class="col-sm-6">
+                          <input type="text" readonly class="form-control-plaintext" id="invoiceId" value="3566">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="staticEmail"  class="col-sm-2 col-form-label">Дата приёма</label>
+                        <div class="col-sm-6">
+                          <input type="text"  readonly class="form-control-plaintext" id="inputInvoiceDate">
+                            
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Тип транспорта</label>
+                        <div class="col-sm-6">
+                          <select id="transportType" class="form-control">
+                            <option value="Ж/Д">Ж/Д</option>
+                            <option value="Автотранспорт">Автотранспорт</option>
+                            
+                        </select>
+                        </div>
+                      </div>
+                        
+                      <div class="form-group row">
+                        <label for="inputAdress" class="col-sm-2 col-form-label">Доп. информация</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" id="inputDescription" placeholder="">
+                        </div>
+                          <div class="col-sm-2">
+                          <a href="#" class="btn btn-primary"><span class="oi oi-check"></span> Сохранить</a>
+                              
+                        </div>
+                          <div class="col-sm-2">
+                          <a href="#" class="btn btn-primary"><span class="oi oi-plus"></span> Добавить</a>
+                              
+                        </div>
+                          
+                      </div>
+                    </form>
+                </div>
+                
+            </div>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Поиск</span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="">
+                      <div class="input-group-append">
+                        <button class="btn btn-default"><span class="oi oi-magnifying-glass"></span></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Дата приема</th>
+                          <th scope="col">Тип транспорта</th>
+                          <th scope="col">Доп. информация</th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="tableRow">
+                          <td scope="row">1</td>
+                          <td>2018-08-12 12:33</td>  
+                          <td>Ж/Д</td>
+                          <td></td>
+                          <td><a href="#" class="btn btn-default"><span class="oi oi-pencil"></span></a><a href="#" class="btn btn-default"><span class="oi oi-x"></span></a></td>
+                            <td><a href="#" class="btn btn-warning">Список прихода</a></td>
+                        </tr>
+                        <tr class="tableRow">
+                          <td scope="row">2</td>
+                          <td>2018-08-11 12:33</td>  
+                          <td>Автотранспорт</td>
+                          <td>Кариев С.</td>
+                          <td><a href="#" class="btn btn-default"><span class="oi oi-pencil"></span></a><a href="#" class="btn btn-default"><span class="oi oi-x"></span></a></td>
+                            <td><a href="#" class="btn btn-warning">Список прихода</a></td>
+                        </tr>
+                        <tr class="tableRow">
+                          <td scope="row">3</td>
+                          <td>2018-08-10 12:33</td>  
+                          <td>Ж/Д</td>
+                          <td>Вагон 35468877</td>
+                          <td><a href="#" class="btn btn-default"><span class="oi oi-pencil"></span></a><a href="#" class="btn btn-default"><span class="oi oi-x"></span></a></td>
+                            <td><a href="#" class="btn btn-warning">Список прихода</a></td>
+                        </tr>
+                         
+                      </tbody>
+                    </table>
+
+                </div>
+            </div>
+        
+        </div>
+            </div>
+    </body>
+</html>
